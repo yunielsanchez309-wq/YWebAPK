@@ -5,3 +5,7 @@ setTimeout(() => {menu.style.display="block";}, 60);}
     else{
 setTimeout(() => {menu.style.display="none";}, 60);}
 }
+
+function menuc(){
+    menu.style.display="none"
+}
