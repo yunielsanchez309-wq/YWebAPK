@@ -6,10 +6,20 @@
   <title>YWeb.Apk</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onclick="menuoc()">
   <h1 class="titleh1">
    YWeb.APK
+    <input class="botonmenu" id="botonomenu" type="button" onclick="menuoc()">
   </h1>
+  
+  <div id="menu" style="display:none;">
+    <h1>Menú</h1>
+    <center>
+    <a class="linkpagesmenu" href="">Soporte</a>
+    <a class="linkpagesmenu" href="">Acerca de</a>
+    <a class="linkpagesmenu" href="">Terminos y Condiciones de Uso</a>
+    </center>
+  </div>
   
   <div class="divapks">
     
@@ -17,11 +27,13 @@
       <img class="iconapk" src="Icono contador de dinero.jpg">
       <a href="contador de dinero.info.html"><img class="iconinfo" src="iconinfo.jpg" onclick="ocinfoapk()"></a>
       <center><p>Contador de Dinero</p>
-      <button>Descargar .apk</button></center>
+      <button class="botondescarga">Descargar .apk</button></center>
     </div>
     
   </div>
-  
+  <footer>
+    <p>YWeb-YSapk</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
