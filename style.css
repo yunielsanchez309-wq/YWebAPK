@@ -10,7 +10,7 @@
   padding:10px 0px;
   width:100%;
   border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px;
+  border-bottom-right-radius:0px;
   font-size:80px;
 }
 .titleh1 .botonmenu{
@@ -28,12 +28,12 @@
 #menu{
   position:fixed;
   padding:10px;
-  top:110px;
+  top:112px;
   right:0px;
   background-color:#000000dd;
   border:1px solid #000;
   border-bottom-left-radius:10px;
-  max-width:40%;
+  width:40%;
   
 }
 #menu .linkpagesmenu{
@@ -78,14 +78,15 @@
 .divapk .iconinfo{
   display:inline-flex;
   position:absolute;
-  margin-left:1%;
-  margin-top:3px;
-  width:6%;
+  margin-left:2px;
+  margin-top:1px;
+  width:8%;
   border-radius:100%;
+  border:2px solid gray;
 }
 
 .divapk .iconapk{
-  width:68%;
+  width:66%;
   margin-top:10px;
   margin-left:10px;
   border-radius:15px;
@@ -130,8 +131,10 @@ body{font-family: calibri;
   font-size:60px;
 }
 .divinfoapk p{
-  max-width:56%;
+  font-size:20px;
+  max-width:55%;
   display: inline-block;
+  margin-left:5px;
 }
 .divinfoapk .botondescarga{
   position: absolute;
@@ -160,4 +163,26 @@ footer{width:100%;
   bottom:0px;
   left:0px;
   text-align: center;
+}
+
+.divacercade{
+  background-color:#fff;
+  margin: 5px;
+  margin-top:130px;
+  border-radius:3px;
+  padding:10px;
+}
+.divacercade h1{
+  width:100%;
+  text-align:center;
+}
+
+.divacercade .botonredsocial{
+  width:100px;
+  height:100px;
+  background-color:black;
+  border:3px solid gray;
+  background-size:100% 100%;
+  border-radius:20px;
+  margin-left:10px;
 }
