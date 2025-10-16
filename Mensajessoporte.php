@@ -16,5 +16,5 @@ fclose($myfile);
 
 ?>
 <script>
-window.location="Soporte.php"
+window.location="Soporte.html"
 </script>
