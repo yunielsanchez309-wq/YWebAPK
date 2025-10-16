@@ -1,0 +1,11 @@
+
+.mensajediv{
+  border:1px solid gray;
+  padding:10px;
+  border-radius:10px;
+  max-width:50%;
+}
+.brespuesta{
+  border-top:1px solid gray;
+}
+

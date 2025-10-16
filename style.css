@@ -25,6 +25,53 @@
   border:1px solid gray;
   border-radius:10px;
 }
+
+.botonmenu:hover{
+  border:1px solid red;
+}
+
+.titleh1 .botonbuscar{
+  position: absolute;
+  right:110px;
+  top:10px;
+  background-image:url(Lupa.jpg);
+  background-size:100% 100%;
+  background-color: transparent;
+  width:90px;
+  height:90px;
+  border:1px solid gray;
+  border-radius:10px;
+}
+.botonbuscar:hover{
+  border:1px solid red;
+}
+ 
+#busqueda{margin-bottom:-110px;
+  margin-top:112px;
+  margin-left:50%;
+  margin-right:0px;
+  padding:3px;
+  background-color:#000000dd;
+  border:1px solid #000;
+  border-bottom-left-radius:10px;
+  display:none;
+  
+}
+#busqueda #textobusqueda{
+  font-size:26px;
+  width:calc(98% - 50px);
+  border-bottom-left-radius:10px;
+}
+#busqueda #botonbusquedaform{
+  width:40px;
+  height:40px;
+  background-image:url(Lupa.jpg);
+  background-size:100% 100%;
+  background-color: transparent;
+  border:1px solid gray;
+  border-radius:6px;
+}
+
 #menu{
   position:fixed;
   padding:10px;
@@ -72,23 +119,15 @@
 }
 .divapk{width:30%;
   border:1px solid gray;
-  padding-bottom:5px;
+  padding:5px;
   border-radius:10px;
 }
-.divapk .iconinfo{
-  display:inline-flex;
-  position:absolute;
-  margin-left:2px;
-  margin-top:1px;
-  width:8%;
-  border-radius:100%;
-  border:2px solid gray;
+.divapk a{
+  text-decoration:none;
 }
 
 .divapk .iconapk{
   width:66%;
-  margin-top:10px;
-  margin-left:10px;
   border-radius:15px;
 }
 .botondescarga{
@@ -185,4 +224,39 @@ footer{width:100%;
   background-size:100% 100%;
   border-radius:20px;
   margin-left:10px;
+}
+
+.divcontenido{
+  margin:5px;
+  margin-top:130px;
+  padding:1%;
+  background-color:#fff;
+  border-radius:3px;
+}
+.titulocontenido{
+  font-size:30px;
+  text-align:center;
+}
+
+#cajamensaje{
+  width:calc(100% - 20px);
+  padding:10px;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  rigth:0px;
+  max-height:180px;
+  background-color:#fff;
+  border-top:2px soldi gray;
+}
+#cajamensaje textarea{
+  width:60%;
+  height:130px;
+  padding:10px;
+  font-size:18px;
+  border-radius:8px;
+}
+#cajamensaje input{
+  font-size:20px;
+  border-radius:10px;
 }

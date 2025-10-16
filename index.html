@@ -9,24 +9,35 @@
 <body onclick="menuc()">
   <h1 class="titleh1">
    YWeb.APK
+    <input type="button" class="botonbuscar" onclick="busquedaoc()">
     <input class="botonmenu" id="botonomenu" type="button" onclick="menuoc()">
   </h1>
   
+  
+    <div id="busqueda">
+    <input type="text" id="textobusqueda" placeholder="Buscar">
+      <input type="button" id="botonbusquedaform">
+  </div>
   <div id="menu" style="display:none;">
     <h1>Menú</h1>
     <center>
-    <a class="linkpagesmenu" href="Soporte.html">Soporte</a>
-    <a class="linkpagesmenu" href="Acerca de.html">Acerca de</a>
+    <a class="linkpagesmenu" href="Soporte.php">Soporte</a>
+    <a class="linkpagesmenu" href="Acerca de.html">Acerca de:</a>
+    <a class="linkpagesmenu" href="Comunidad.html">Comunidad</a>
     </center>
   </div>
   
   <div class="divapks">
-    
+    <h1 class="titulocontenido">Aplicaciones Moviles</h1>
     <div class="divapk">
+     <center>
+       <a href="contador de dinero.info.html">
       <img class="iconapk" src="Icono contador de dinero.jpg">
-      <a href="contador de dinero.info.html"><img class="iconinfo" src="Iconinfo.png" onclick="ocinfoapk()"></a>
-      <center><p>Contador de Dinero</p>
-        <a href="Contador_de_dinero.apk"><button class="botondescarga">Descargar .apk</button></a></center>
+       <p>Contador de Dinero</p></a>
+       <hr>
+        <a href="Contador_de_dinero.apk">
+          <button class="botondescarga">Descargar .apk</button>
+        </a></center>
     </div>
     
   </div>
