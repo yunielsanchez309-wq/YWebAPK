@@ -1,4 +1,4 @@
-function menuoc(){
+function menuoc(){busqueda.style.display="none"
     if(menu.style.display=="none")
     {
 setTimeout(() => {menu.style.display="block";}, 60);}
@@ -8,7 +8,6 @@ setTimeout(() => {menu.style.display="none";}, 60);}
 
 function menuc(){
     menu.style.display="none"
-    busqueda.style.display="none"
 }
 
 function busquedaoc(){
@@ -17,4 +16,8 @@ function busquedaoc(){
 setTimeout(() => {busqueda.style.display="none";}, 60);}
     else{
 setTimeout(() => {busqueda.style.display="block";}, 60);}
+}
+
+function clickendivapks(){
+    busqueda.style.display="none"
 }

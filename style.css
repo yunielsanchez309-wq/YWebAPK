@@ -10,18 +10,18 @@
   padding:10px 0px;
   width:100%;
   border-bottom-left-radius:10px;
-  border-bottom-right-radius:0px;
-  font-size:80px;
+  border-bottom-right-radius:10px;
+  font-size:36px;
 }
 .titleh1 .botonmenu{
   position: absolute;
-  right:10px;
-  top:10px;
+  right:3px;
+  top:3px;
   background-image:url(Menu.png);
   background-size:100% 100%;
   background-color: transparent;
-  width:90px;
-  height:90px;
+  width:50px;
+  height:50px;
   border:1px solid gray;
   border-radius:10px;
 }
@@ -32,13 +32,13 @@
 
 .titleh1 .botonbuscar{
   position: absolute;
-  right:110px;
-  top:10px;
+  left:3px;
+  top:3px;
   background-image:url(Lupa.jpg);
   background-size:100% 100%;
   background-color: transparent;
-  width:90px;
-  height:90px;
+  width:50px;
+  height:50px;
   border:1px solid gray;
   border-radius:10px;
 }
@@ -46,8 +46,8 @@
   border:1px solid red;
 }
  
-#busqueda{margin-bottom:-110px;
-  margin-top:112px;
+#busqueda{margin-bottom:-60px;
+  margin-top:62px;
   margin-left:50%;
   margin-right:0px;
   padding:3px;
@@ -58,13 +58,13 @@
   
 }
 #busqueda #textobusqueda{
-  font-size:26px;
-  width:calc(98% - 50px);
+  font-size:14px;
+  width:calc(98% - 30px);
   border-bottom-left-radius:10px;
 }
 #busqueda #botonbusquedaform{
-  width:40px;
-  height:40px;
+  width:20px;
+  height:20px;
   background-image:url(Lupa.jpg);
   background-size:100% 100%;
   background-color: transparent;
@@ -75,7 +75,7 @@
 #menu{
   position:fixed;
   padding:10px;
-  top:112px;
+  top:62px;
   right:0px;
   background-color:#000000dd;
   border:1px solid #000;
@@ -86,12 +86,12 @@
 #menu .linkpagesmenu{
   display:block;
   color:#00f;
-  padding:10px;
+  padding:5px;
   text-decoration:none;
   margin-top:5px;
   border-radius:10px;
   background-color:#ffffffcc;
-  font-size:36px;
+  font-size:16px;
   max-width:90%;
 }
 #menu h1{
@@ -99,28 +99,31 @@
   color:#fff;
   text-align:center;
   background-color:#777;
-  border-radius:10px;
-  font-size:60px;
+  border-radius:3px;
+  font-size:20px;
 }
 
 .titleh1 img{
-  width:80px;
-  left:10px;
-  top:10px;
+  width:50px;
+  left:5px;
+  top:5px;
   position: absolute;
 }
 
 .divapks{
   margin:5px;
-  margin-top:130px;
+  margin-top:70px;
   padding:1%;
   background-color:#fff;
   border-radius:3px;
 }
-.divapk{width:30%;
+.divapk{width:calc(50% - 18px);
   border:1px solid gray;
   padding:5px;
+  margin-left:2px;
+  margin-right:2px;
   border-radius:10px;
+  display:inline-block;
 }
 .divapk a{
   text-decoration:none;
@@ -132,18 +135,18 @@
 }
 .botondescarga{
   background-repeat:no-repeat;
-  background-size:30px;
+  background-size:20px;
   background-position:5px;
   background-image:url("Flecha abajo.png");
   background-color:#6f6;
-  padding:5px 5px 5px 40px;
+  padding:5px 5px 5px 30px;
   border:1px solid gray;
-  font-size:30px;
+  font-size:14px;
   border-radius:8px;
   font-family:calibri;
 }
 .divapk p{
-  font-size:28px;
+  font-size:18px;
   font-family:calibri;
 }
 
@@ -156,7 +159,7 @@ body{font-family: calibri;
 .divinfoapk{
   background-color:#fff;
   margin: 5px;
-  margin-top:130px;
+  margin-top:70px;
   border-radius:3px;
   padding:10px;
 }
@@ -167,37 +170,44 @@ body{font-family: calibri;
 }
 .divinfoapk h1{
   text-align: center;
-  font-size:60px;
+  font-size:30px;
 }
 .divinfoapk p{
-  font-size:20px;
+  font-size:12px;
   max-width:55%;
   display: inline-block;
   margin-left:5px;
 }
 .divinfoapk .botondescarga{
-  position: absolute;
   margin-top:0px;
-  left:50%;
+  margin-bottom:10px;
   color:#040;
-  font-size:50px;
-  background-size:50px;
   background-repeat:no-repeat;
-  padding:5px 5px 5px 60px;
+  background-size:20px;
+  background-position:5px;
+  background-image:url("Flecha abajo.png");
+  background-color:#6f6;
+  padding:5px 5px 5px 30px;
+  border:1px solid gray;
+  font-size:14px;
+  border-radius:8px;
+  font-family:calibri;
   
 }
 .imgscreenshot{
   width: calc(33% - 15px);
-  border: 4px solid gray;
+  border: 2px solid gray;
   margin:1px;
   border-radius:6px;
+  background-image:url("Background01.jpg");
+  background-size:100% 100%;
 }
 
 
 footer{width:100%;
   background-color:#111;
   color:#fff;
-  font-size:40px;
+  font-size:18px;
   position: absolute;
   bottom:0px;
   left:0px;
@@ -207,7 +217,7 @@ footer{width:100%;
 .divacercade{
   background-color:#fff;
   margin: 5px;
-  margin-top:130px;
+  margin-top:70px;
   border-radius:3px;
   padding:10px;
 }
@@ -220,12 +230,12 @@ footer{width:100%;
 }
 
 .divacercade .botonredsocial{
-  width:100px;
-  height:100px;
+  width:50px;
+  height:50px;
   background-color:black;
-  border:3px solid gray;
+  border:1px solid gray;
   background-size:100% 100%;
-  border-radius:20px;
+  border-radius:10px;
   margin-left:10px;
 }
 
