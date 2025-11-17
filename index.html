@@ -16,14 +16,46 @@
   
   
     <div id="busqueda">
-    <input type="text" id="textobusqueda" placeholder="Buscar">
-      <input type="button" id="botonbusquedaform">
+      <center>
+      <form>
+    <input type="text" id="q" class="textobusqueda" placeholder="Buscar aplicaciones..." onkeyup="search()">
+        </form>
+      <table id="tableid" style="display:none;">
+			<thead>
+				<tr>
+					<th>Icono</th>
+					<th>Nombre de la aplicación</th>
+					<th>Descripción</th>
+				</tr>
+			</thead>
+			<tbody id="the_table_body">
+				<tr onclick="contadordedineroinfopageopen()">
+					<td><img src="Icono contador de dinero.jpg">
+     </td>
+					<td>Contador de Dinero</td>
+					<td>Herramientas</td>
+				</tr>
+				<tr onclick="traductordetextoinfopageopen()">
+					<td><img src="Traductor de texto icono.png">
+     </td>
+					<td>Traductor de texto</td>
+					<td>Herramientas</td>
+				</tr>
+				<tr onclick="codigosdeetecsainfopageopen()">
+					<td><img src="Icono codigos de ETECSA.jpg">
+     </td>
+					<td>Códigos de ETECSA</td>
+					<td>Herramientas</td>
+				</tr>
+			
+			</tbody>
+		</table></center>
   </div>
   <div id="menu" style="display:none;">
     <h1>Menú</h1>
     <center>
     <a class="linkpagesmenu" href="Acerca de.html">Acerca de:</a>
-    </center>
+   </center>
   </div>
   
   <div class="divapks" onclick="clickendivapks()">
@@ -82,7 +114,8 @@
   Esta pagina aun esta en desarrollo.
   <br><br><br><br><br>
   <footer>
-    <p>YWeb-YSapk</p>
+    <p><a class="linkfooter" href="política y condiciones.html">Politica de privacidad y Condisiones de uso</a>
+      <br>YWeb-YSapk</p>
   </footer>
   <script src="script.js"></script>
 </body>
