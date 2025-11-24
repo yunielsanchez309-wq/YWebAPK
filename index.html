@@ -1,106 +1,121 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<title>The King Of Promo | Web Oficial</title>
-	<link rel="icon" href="Icontitle.jpeg">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>YWeb.Apk</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
-<body>
-		<h1 class="h1title">
-			<input class="botonmenu" type="button">
-		</h1>
-	
-		<ul class="listalinkp">
- <li style="background:#55a;">Inicio</li>
-			<a href="Próximos eventos.html">	<li>Proximos Eventos</li></a>
-		<a href="Artistas.html">	<li>Artistas</li></a>
-			<a href="Acerca-de.html"><li>Acerca de:</li></a>
- 		<a href="Contactanos.html">	<li>Contactanos</li></a>
-</ul>
-	
-	<div id="divflotvideoview" style="display:none;"><center>
-		<input class="botoncerrardivvideo" type="button" onclick="cerrardivvideo()">
-		<h2 id="videotitle">Titulo video</h2>
-		<img style="display:none;" src="Icontitle.jpeg" id="img1divflotvideo" class="imgflotview">
-		<video style="display:none;" controls="" preload="" autoplay="" id="videoreproendiv">
-			<source id="srcvideoreproendiv" type="video/mp4" src="">
-		</video>
-		<p id="videoinfo">Descripcion video</p>
-	</center></div>
-	
-	<div id="infopagediv" style="display:none;">
-		<h1 id="h1titleinfopage">Acerca de:</h1>
-		<p>hfj</p>
-	</div>
-	
-	<div id="contactpagediv" style="display:none;">
-		<h1 id="h1titleinfopage">Contactanos</h1>
-		<p>krnrk</p>
-	</div>
-	
-	<h3 style="margin-top:130px; margin-bottom:-110px; text-align:center;">Esta Web aun esta en desarrollo.</h3>
-	
-			<div class="content" id="contentdiv">
-				<form>
-			<input type="text" id="q" placeholder="Buscar..." onkeyup="search()">
-		</form>
-		<center>
-		<table id="tableid">
+<body onclick="menuc()">
+  <h1 class="titleh1">
+   YWeb.APK
+    <input type="button" class="botonbuscar" onclick="busquedaoc()">
+    <input class="botonmenu" id="botonomenu" type="button" onclick="menuoc()">
+  </h1>
+  
+    <div id="busqueda">
+      <center>
+      <form>
+    <input type="text" id="q" class="textobusqueda" placeholder="Buscar aplicaciones..." onkeyup="search()">
+        </form>
+      <table id="tableid" style="display:none;">
 			<thead>
 				<tr>
-					<th>Publicaciones</th>
+					<th>Icono</th>
+					<th>Nombre de la aplicación</th>
+					<th>Descripción</th>
 				</tr>
 			</thead>
 			<tbody id="the_table_body">
-				<tr onclick="openvideofiesta1()">
-					<td>
-						<h2>Fiesta en ...</h2>
-						<br>
-<video preload="metadata" poster="Vistapreviavideos/Screenshot_20251122_143541_XPlayer - Video Player.jpg" class="videoiddivcontenttable" muted="">
-    <source src="VID-20251118-WA0000.mp4" type="video/mp4">
-</video>
-					</td>
+				<tr onclick="contadordedineroinfopageopen()">
+					<td><img src="Icono contador de dinero.jpg">
+     </td>
+					<td>Contador de Dinero</td>
+					<td>Herramientas</td>
 				</tr>
-				<tr>
-					<td>2</td>
+				<tr onclick="traductordetextoinfopageopen()">
+					<td><img src="Traductor de texto icono.png">
+     </td>
+					<td>Traductor de texto</td>
+					<td>Herramientas</td>
 				</tr>
-				<tr>
-					<td>Maria</td>
+				<tr onclick="codigosdeetecsainfopageopen()">
+					<td><img src="Icono codigos de ETECSA.jpg">
+     </td>
+					<td>Códigos de ETECSA</td>
+					<td>Herramientas</td>
 				</tr>
-				<tr>
-					<td>Hanna</td>
-				</tr>
-				<tr>
-					<td>Jack</td>
-				</tr>
+			
 			</tbody>
 		</table></center>
-	</div>
-	<img src="Icontitle.jpeg" id="imglogotkopfooter">
-		<footer>
-		<input onclick="window.location='https://wa.me/+535 9654544/?text=Hola'" type="button" class="boyonfootersocial" style="background-image:url('whatsApp icon.png'); border-bottom-left-radius:3px;">
-		<input type="button" class="boyonfootersocial" style="background-image:url('Facebook icon.jpg');">
-		<input type="button" class="boyonfootersocial" style="background-image:url('Instagram icon.jpg');">
-		<br><br>	The King Of Promo
-	</footer>
-	
-<script>
-    const videos = document.querySelectorAll('.videoiddivcontenttable');
-
-    videos.forEach(video => {
-        video.addEventListener('touchstart', function() {
-            this.play();
-        });
-
-        video.addEventListener('touchend', function() {
-        	setTimeout(() => {this.pause();}, 3000);
-//            this.currentTime = 0; // Opcional: reinicia el video al inicio
-        });
-    });
-</script>
-
+  </div>
+  <div id="menu" style="display:none;">
+    <h1>Menú</h1>
+    <center>
+    <a class="linkpagesmenu" href="Acerca de.html">Acerca de:</a>
+   </center>
+  </div>
+  
+  <div class="divapks" onclick="clickendivapks()"><center>
+    <h1 class="titulocontenido">Aplicaciones Android</h1>
+    <div class="divapk" style="display:none;">
+     <center>
+       <a href="tienda ysapk info.html">
+      <img class="iconapk" src="Icono tienda YSapk.jpeg">
+       <p>Tienda YSAPK</p></a>
+       <hr>
+        <a href="Tienda_G.apk" download="Tienda_G.apk">
+          <button class="botondescarga">Descargar .apk</button>
+        </a></center>
+    </div>
+    
+    <div class="divapk">
+     <center>
+       <a href="contador de dinero.info.html">
+      <img class="iconapk" src="Icono contador de dinero.jpg">
+       <p>Contador de Dinero</p></a>
+       <hr>
+        <a href="Contador_de_dinero.apk" download="Contador_de_dinero.apk">
+          <button class="botondescarga">Descargar .apk</button>
+        </a></center>
+    </div>
+    
+    
+    <div class="divapk">
+     <center>
+       <a href="Traductor de texto info.html">
+      <img class="iconapk" src="Traductor de texto icono.png"> 
+       <p>Traductor de texto</p></a>
+       <hr>
+        <a href="Traductor_YS.apk" download="Traductor_YS.apk">
+          <button class="botondescarga">Descargar .apk</button>
+        </a>
+     </center>
+    </div>
+    
+    <div class="divapk">
+     <center>
+       <a href="Codigos de ETECSA info.html">
+      <img class="iconapk" src="Icono codigos de ETECSA.jpg"> 
+       <p>Códigos de ETECSA</p></a>
+      <p class="infopais">Solo para Cuba</p>
+       <hr>
+        <a style="display:none;" href="YS_Codigos_ETECSA.apk" download="YS_Codigos_ETECSA.apk">
+          <button class="botondescarga">Descargar .apk</button>
+        </a>
+       <button class="botondescarga">Proximamente...</button>
+     </center>
+   </center> </div>
+    
+  </div>
+  Esta Página Web aun esta en desarrollo.
+  <br><br><br><br><br>
+  <footer>
+    <p><a class="linkfooter" href="política y condiciones.html">Politica de privacidad y Condisiones de uso</a>
+      <br>YWeb-YSapk</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
