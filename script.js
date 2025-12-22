@@ -60,3 +60,6 @@ function traductordetextoinfopageopen(){
 function codigosdeetecsainfopageopen(){
     window.location="Codigos de ETECSA info.html"
 }
+function calculadorainfopageopen(){
+    window.location="Infopagesapk/Calculadora.html"
+}
