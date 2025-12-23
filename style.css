@@ -14,38 +14,43 @@
   font-size:36px;
   box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
    line-height: 1.6;
+  text-shadow:1px 3px 6px rgba(250,250,250,0.5);
+
 }
 .titleh1 .botonmenu{
   position: absolute;
-  right:3px;
-  top:12px;
+  right:10px;
+  top:16px;
   background-image:url(Menu.png);
   background-size:100% 100%;
   background-color: transparent;
-  width:50px;
-  height:50px;
-  border:1px solid gray;
+  width:46px;
+  height:46px;
+  border:0px solid gray;
   border-radius:10px;
-}
+box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.2);
+ }
 
 .botonmenu:hover{
-  border:1px solid red;
+  border:1px solid gray;
 }
 
 .titleh1 .botonbuscar{
   position: absolute;
-  left:3px;
-  top:13px;
-  background-image:url(Lupa.jpg);
-  background-size:100% 100%;
-  background-color: transparent;
-  width:50px;
-  height:50px;
-  border:1px solid gray;
-  border-radius:10px;
-}
+  left:10px;
+  top:19px;
+  background-image:url(Lupa.png);
+  background-size:70% 70%;
+  background-color:#000;
+  background-position:center center;
+  background-repeat:no-repeat;
+  width:40px;
+  height:40px;
+  border:0px solid gray;
+  border-radius:100%;
+ }
 .botonbuscar:hover{
-  border:1px solid red;
+  border:1px solid gray;
 }
 
 #menu{
