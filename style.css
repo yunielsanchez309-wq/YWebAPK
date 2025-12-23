@@ -94,16 +94,24 @@
   background-color:#fff;
   border-radius:3px;
 }
-.divapk{width:calc(50% - 18px);
+.divapk{width:calc(50% - 30px);
   max-width:200px;
-  border:1px solid gray;
+  border:1px solid #aaa;
   padding:5px;
-  margin-left:2px;
-  margin-right:2px;
-  margin-bottom:5px;
+  margin-left:6px;
+  margin-right:6px;
+  margin-bottom:13px;
   border-radius:10px;
   display:inline-block;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  transition:all 200ms linear
 }
+
+.divapk:hover{
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.7);
+  background-color:#eee;
+}
+
 .divapk .infopais{
   margin-top:0px;
   background-color:gray;
@@ -117,7 +125,7 @@
 }
 
 .divapk .iconapk{
-  width:66%;
+  height:120px;
   border-radius:10px;
 }
 .botondescarga{
